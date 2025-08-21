@@ -1,0 +1,203 @@
+/* style.css - 全局样式 */
+:root {
+    --primary-color: #4e73df;
+    --secondary-color: #36b9cc;
+    --dark-color: #2e3a59;
+    --light-color: #f8f9fc;
+    --success-color: #1cc88a;
+    --danger-color: #e74a3b;
+    --warning-color: #f6c23e;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4edfb 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background: linear-gradient(to right, var(--primary-color), #2a4bbd);
+    color: white;
+    padding: 25px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.card-header h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.form-control {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d1d3e2;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.15);
+}
+
+textarea.form-control {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2a4bbd;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(78, 115, 223, 0.3);
+}
+
+.btn-secondary {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #2aa1b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(54, 185, 204, 0.3);
+}
+
+.btn-light {
+    background: var(--light-color);
+    color: var(--dark-color);
+    border: 1px solid #d1d3e2;
+}
+
+.btn-light:hover {
+    background: #e2e6f1;
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: rgba(28, 200, 138, 0.15);
+    border: 1px solid rgba(28, 200, 138, 0.3);
+    color: #1cc88a;
+}
+
+.alert-error {
+    background-color: rgba(231, 74, 59, 0.15);
+    border: 1px solid rgba(231, 74, 59, 0.3);
+    color: #e74a3b;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-3 {
+    margin-top: 15px;
+}
+
+.mt-4 {
+    margin-top: 25px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.profile-container {
+    max-width: 800px;
+}
+
+.profile-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.profile-header {
+    border-bottom: 1px solid #e3e6f0;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.profile-content {
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
