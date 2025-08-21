@@ -1,1 +1,1 @@
-
+sqlmap -p newsid
